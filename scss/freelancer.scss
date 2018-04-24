@@ -1,0 +1,57 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "navbar.scss";
+@import "masthead.scss";
+@import "portfolio.scss";
+@import "contact.scss";
+@import "footer.scss";
+@import "bootstrap-overrides.scss";
+
+.navbar-brand {font-size: 1rem;}
+
+.owl-carousel.owl-theme {
+    .owl-nav {
+        [class*=owl-]{
+            position: absolute;
+            top: 40%;
+            padding: 10px !important;
+            font-size: 50px;
+            background: #4DC7A0;
+            color: #FFF;
+            text-decoration: none;
+        }
+        button.owl-prev{
+            left: 0px;
+        }
+        button.owl-next{
+            right: 0px;
+        }
+    }
+}
+.owl-theme {
+    .owl-dots{
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+    }
+}
+#page-top {
+    padding-top: 100px;
+}
+@media (max-width: 768px){
+    #page-top {
+        padding-top: 70px;
+    }
+    .owl-carousel.owl-theme {
+        .owl-nav {
+            [class*=owl-]{
+                font-size: 20px;
+                top: 30%;
+            }
+        }
+    }
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+}
